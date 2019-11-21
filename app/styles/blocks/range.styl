@@ -1,0 +1,72 @@
+.range
+  width 100%
+
+  &-info
+    display flex
+    justify-content space-between
+    align-items flex-end
+    width 100%
+    position relative
+    z-index 11
+    margin-top 24px
+
+  &-elem
+    font-size 13px
+    width 25%
+    box-sizing border-box
+    padding-right 20px
+    box-sizing border-box
+    &:last-child
+      text-align right
+      display flex
+      flex-direction column
+      align-items flex-end
+      padding-right 0
+
+    +to-width(420px)
+      font-size 10px
+
+  .rangeslider
+    height 15px
+    box-shadow none
+    border-radius 0
+    background-color #e8e8e8
+
+    &:before
+      content ''
+      position absolute
+      background #fff
+      width 105%
+      height 30px
+      top -24px
+      left -0.5%
+      transform rotate(-1deg)
+      z-index 10
+
+    &__fill
+      box-shadow none
+      border-radius 0
+      background-image linear-gradient(to right, #ccb1f1 0%, #435993 100%)
+      width auto
+      margin-right -20px
+
+    &__handle
+      background-color transparent
+      background-image url('../images/btn-range.png')
+      width 23px
+      height 26px
+      border none
+      border-radius 0
+      box-shadow none
+      z-index 11
+      top 18px
+      // transform translateX(-11px)
+
+.circles
+  margin-top 5px
+  &__elem
+    width 1px
+    height 1px
+    border-radius 50%
+    background-color #1c1c1c
+    margin-top 1px

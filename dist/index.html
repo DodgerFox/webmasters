@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<!--meta(http-equiv='X-UA-Compatible' content='IE=edge')-->
+		<!--meta(name='imagetoolbar' content='no')-->
+		<!--meta(name='msthemecompatible' content='no')-->
+		<!--meta(name='cleartype' content='on')-->
+		<!--meta(name='HandheldFriendly' content='True')-->
+		<!--meta(name='format-detection' content='telephone=no')-->
+		<!--meta(name='format-detection' content='address=no')-->
+		<!--meta(name='apple-mobile-web-app-capable' content='yes')-->
+		<!--meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')-->
+		<!-- Favicon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/android-chrome-512x512.png">
+		<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#34ee00">
+		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#7424f4">
+		<meta name="theme-color" content="#7424f4">
+		<!--share social-->
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Название сайта">
+		<meta property="og:title" content="Заголовок">
+		<meta property="og:description" content="Описание.">
+		<meta property="og:url" content="../assets/images/WheelMe.png">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="../assets/images/WheelMe.png">
+		<meta property="og:image:width" content="1280">
+		<meta property="og:image:height" content="628">
+		<title>WM - Чернов Алексей Владимирович</title>
+		<!--meta(name='description' content='')-->
+		<!--meta(name='copyright' content='')-->
+		<!-- Common CSS-->
+		<link href="assets/styles/common.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="wrap">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-list__item"><a href=".personal">Личная информация</a>
+						</li>
+						<li class="nav-list__item"><a href=".experience">Опыт</a>
+						</li>
+						<li class="nav-list__item"><a href=".javascript">JavaSpript</a>
+						</li>
+						<li class="nav-list__item"><a href=".about">О себе</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-gamburger">
+					<div class="header-gamburger__item"></div>
+					<div class="header-gamburger__item"></div>
+					<div class="header-gamburger__item"></div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<form class="questionnaire">
+				<section class="welcome">
+					<div class="wrap">
+						<h1 class="welcome-title">Анкета</h1>
+					</div>
+				</section>
+				<section class="section personal">
+					<div class="wrap">
+						<img class="questionnaire-icon" src="assets/images/book_icon.svg">
+						<h2 class="section-title">Личная информация</h2>
+						<div class="input">
+							<input class="active" type="text" name="name" required>
+							<label for="name">ФИО</label>
+						</div>
+						<select class="select">
+							<option>2000</option>
+							<option>1999</option>
+							<option>1998</option>
+							<option>1997</option>
+							<option>1996</option>
+							<option selected>1995</option>
+							<option>1994</option>
+							<option>1993</option>
+							<option>1992</option>
+						</select>
+						<div class="input">
+							<input class="active" type="text" name="place" required>
+							<label for="place">Место проживания</label>
+						</div>
+						<div class="input">
+							<input class="active" type="text" name="skype" required>
+							<label for="skype">Skype</label>
+						</div>
+						<div class="input">
+							<input class="active" type="text" name="email" required>
+							<label for="email">E-mail</label>
+						</div>
+					</div>
+				</section>
+				<section class="section experience">
+					<div class="wrap">
+						<img class="questionnaire-icon" src="assets/images/list_icon.svg">
+						<h2 class="section-title">Расскажите о своем опыте</h2>
+						<div class="container">
+							<div class="checkbox">
+								<input id="bem" type="checkbox" name="bem" checked>
+								<label for="bem">БЭМ/OOCSS</label>
+							</div>
+							<div class="checkbox">
+								<input id="place" type="checkbox" name="place" checked>
+								<label for="place">Stylus/LESS/SASS</label>
+							</div>
+							<div class="checkbox">
+								<input id="svg" type="checkbox" name="svg" checked>
+								<label for="svg">Работаю с SVG</label>
+							</div>
+							<div class="checkbox">
+								<input id="semantic" type="checkbox" name="email" checked>
+								<label for="semantic">Верстаю семантично</label>
+							</div>
+							<div class="checkbox">
+								<input id="es" type="checkbox" name="email" checked>
+								<label for="es">ES2015/ES2016</label>
+							</div>
+							<div class="checkbox">
+								<input id="gg" type="checkbox" name="email" checked>
+								<label for="gg">Gulp/GRUNT</label>
+							</div>
+							<div class="checkbox">
+								<input id="webp" type="checkbox" name="email" checked>
+								<label for="webp">Webpack</label>
+							</div>
+							<div class="checkbox">
+								<input id="jq" type="checkbox" name="email" checked>
+								<label for="jq">jQuery</label>
+							</div>
+							<div class="checkbox">
+								<input id="git" type="checkbox" name="email" checked>
+								<label for="git">Ипользую Git</label>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section javascript">
+					<div class="wrap">
+						<img class="questionnaire-icon" src="assets/images/js_icon.svg">
+						<h2 class="section-title">Уровень владения JavaScript</h2>
+						<div class="range">
+							<div class="range-info">
+								<div class="range-elem">
+									<p>Не владею</p>
+									<div class="circles">
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+									</div>
+								</div>
+								<div class="range-elem">
+									<p>Использую готовые решения</p>
+									<div class="circles">
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+									</div>
+								</div>
+								<div class="range-elem">
+									<p>Использую готовые решения и умею и переделывать</p>
+									<div class="circles">
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+									</div>
+								</div>
+								<div class="range-elem">
+									<p>Пишу сложный JS с нуля</p>
+									<div class="circles">
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+										<div class="circles__elem"></div>
+									</div>
+								</div>
+							</div>
+							<input type="range" min="0" max="400" step="100" value="200" data-rangeslider data-orientation="horizontal">
+						</div>
+					</div>
+				</section>
+				<section class="section about">
+					<div class="wrap">
+						<img class="questionnaire-icon" src="assets/images/profile_icon.svg">
+						<h2 class="section-title">Расскажите о себе</h2>
+						<p class="section-text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+						<textarea class="textarea" placeholder="Понравилась тем, что..." name="about" required></textarea>
+						<input class="button" type="submit" value="Готово">
+					</div>
+				</section>
+			</form>
+		</main>
+		<script src="assets/scripts/common.min.js"></script>
+		<script src="assets/scripts/main.js"></script>
+	</body>
+
+</html>

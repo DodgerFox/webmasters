@@ -1,0 +1,63 @@
+body
+	position relative
+	min-width 320px
+	width 100%
+	color #1c1c1c
+	font-weight 400
+	transition 1s background
+	background-color white
+	// -webkit-font-smoothing none
+  // -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+	&.colored
+		background #f1f0d6
+
+	&.fixed
+		overflow hidden
+
+
+html
+	font-family Roboto, Arial, sans-serif
+	font-size 62.5%
+	line-height 1.4
+	letter-spacing 0
+	min-width 320px
+	margin-left auto
+	margin-right auto
+
+
+
+.wrap
+	position relative
+	padding 0 30px
+	width 100%
+	margin-left auto
+	margin-right auto
+	max-width 828px
+	+to-width(767px)
+		padding 0 15px
+
+
+
+.main
+	display flex
+	flex-direction column
+	min-height 100vh
+	position relative
+	z-index 2
+	background-image url('../images/welcome.png')
+	background-size contain
+	background-position top center
+	background-repeat no-repeat
+	padding-bottom 74px
+	+to-width(768px)
+		margin-top 60px
+		background-size initial
+
+.container
+	display flex
+	flex-wrap wrap
+	width 100%
+	margin-top 15px
+	padding-bottom 60px
+	+to-width(768px)
+		padding 0

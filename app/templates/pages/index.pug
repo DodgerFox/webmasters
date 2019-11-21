@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	main.main
+		form.questionnaire
+			include ../blocks/welcome
+			include ../blocks/personal
+			include ../blocks/experience
+			include ../blocks/javaspript
+			include ../blocks/about
+	//- include ../blocks/footer
+
+	+script('common.min')
+	+script('main')

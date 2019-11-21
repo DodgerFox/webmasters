@@ -1,0 +1,71 @@
+.footer
+  background-color #1c2428
+  padding-top 80px
+  padding-bottom 40px
+  +to-width(640px)
+    padding-top 40px
+
+  &__title
+    text-align center
+    font-family "Molodofont"
+    color #f7b197
+    font-size 40px
+    font-weight 400
+    padding-bottom 70px
+    letter-spacing 5px
+    +to-width(640px)
+      padding-bottom 40px
+
+  &-body
+    display flex
+    justify-content space-between
+    padding-bottom 100px
+    +to-width(600px)
+      flex-wrap wrap
+
+  &-list
+    font-size 18px
+    font-weight 500
+    width 25%
+    +to-width(850px)
+      font-size 16px
+    +to-width(600px)
+      width 50%
+      // text-align center
+      padding-bottom 20px
+
+  &-item
+    margin-top 10px
+    line-height 28px
+    a
+      color white
+      t()
+
+    &:hover
+      a
+        color #f7b197
+
+    &:first-child
+      font-size 26px
+      font-family "Molodofont"
+      letter-spacing 0.34px
+      color #919191
+      margin-bottom 15px
+
+    &.disabled
+      pointer-events none
+      a
+        color #9a9a9a
+
+  &-bottom
+    display flex
+    justify-content space-between
+    font-size 14px
+    font-weight 500
+    color #aeaeae
+
+  &-autor
+    display flex
+    align-items center
+    &__link
+      margin-left 10px

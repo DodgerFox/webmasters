@@ -1,0 +1,113 @@
+.header
+  height 80px
+  background-color white
+  +to-width(768px)
+    top 0
+    left 0
+    right 0
+    position fixed
+    z-index 11
+    height 60px
+    border-bottom 1px solid #eaeaea
+
+  &.open
+    +to-width(767px)
+      .nav, .header-social, .header-search, .header-signin
+        opacity 1
+        pointer-events all
+
+      &.header_page
+        background-color #1c2428
+
+  .wrap
+    display flex
+    justify-content center
+    align-items center
+    height 100%
+
+
+  &-gamburger
+    position absolute
+    top 12px
+    right 20px
+    cursor pointer
+    width 24px
+    height 26px
+    display none
+    min-width 24px
+    +to-width(768px)
+      display block
+
+    &__item
+      position absolute
+      left 0
+      top 8px
+      height 2px
+      background-color #435993
+      right 0
+      transition 0.3s all
+      &:nth-child(2)
+        top 16px
+      &:last-child
+        top 24px
+
+    &.active
+      .header-gamburger__item
+        &:nth-child(1)
+          transform rotate(-45deg)
+          top 18px
+        &:nth-child(2)
+          transform rotate(45deg)
+          top 18px
+        &:last-child
+          opacity 0
+
+    &:hover
+      cursor pointer
+
+
+
+.nav
+  +to-width(767px)
+    position fixed
+    right 0
+    left  0
+    bottom 0
+    top 60px
+    background-color white
+    z-index 10
+    border-top 2px solid #eaeaea
+    opacity 0
+    pointer-events none
+    t()
+    &.open
+      opacity 1
+      pointer-events all
+
+  &-list
+    display flex
+    font-size 14px
+    font-weight 300
+    +to-width(767px)
+      flex-direction column
+      align-items center
+      justify-content center
+      height 100%
+      padding-bottom 60px
+      font-size 20px
+
+    &__item
+      margin-right 75px
+      +to-width(767px)
+        margin-right 0
+        margin-bottom 18px
+      a
+        color #435993
+        t()
+
+      &:last-child
+        margin-right 0
+
+      &:hover
+        a
+          color #1c1c1c
